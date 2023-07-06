@@ -199,6 +199,8 @@ body {
   }
   .js-menu-container.is-open {
     position: fixed;
+    height: 100%;
+    width: 100%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
