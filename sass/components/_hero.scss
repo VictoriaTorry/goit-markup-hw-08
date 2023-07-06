@@ -14,7 +14,9 @@
 
   &__title {
     margin: 0 auto 30px auto;
-    max-width: 696px;
+    @media screen and (max-width: 1199px) {
+      max-width: 360px;
+    }
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
@@ -25,15 +27,8 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero {
-    max-width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -85,6 +80,10 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/hero/hero-1200px@2x.webp);
+
+        &__title {
+          max-width: 696px;
+        }
     }
   }
 }

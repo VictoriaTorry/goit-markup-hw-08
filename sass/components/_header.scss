@@ -20,6 +20,8 @@
   display: none;
 }
 
+
+
 @media screen and (max-width: 767px) {
   .js-menu-container {
     position: absolute;
@@ -49,7 +51,14 @@
     display: none;
   }
 
+body.is-hidden {
+    overflow: hidden;
+  }
+
   .js-menu-container.is-open {
+    position: fixed;
+    // height: 100%;
+    // width: 100%;
     transform: translateX(0);
 
     & .close-btn {
@@ -82,6 +91,9 @@
         &:focus {
           color: var(--accent-color);
         }
+        &.current {
+          color: var(--accent-color);
+        }
       }
     }
 
@@ -98,6 +110,9 @@
       &__item.phone {
         order: 1;
         .auth-list__link {
+          @media screen and (max-width: 420px) {
+            font-size: 30px;
+          }
           font-size: 34px;
           line-height: 1.18;
           color: var(--accent-color);
@@ -189,10 +204,19 @@
   .social-links__link {
     text-decoration: none;
     font-weight: 500;
+    @media screen and (max-width: 440px) {
+      font-size: 12px;
+    }
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .js-menu-container {
+    padding: 20px;
   }
 }
 
@@ -271,7 +295,9 @@
     list-style: none;
 
     &__item.mail {
-      margin-bottom: 10px;
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 10px;
+      }
     }
 
     &__link {
