@@ -86,7 +86,7 @@
           class="burger-btn menu-toggle js-open-menu"
           aria-expanded="false"
         >
-        <!-- aria-controls="mobile-menu" -->
+          <!-- aria-controls="mobile-menu" -->
           <svg
             class="burger-icon"
             width="40"
@@ -605,58 +605,60 @@
           <p class="form-request__title">
             Leave your information and we'll call you back
           </p>
-        <label class="form-request__label">
-          <span class="form-request__description">Name</span>
-          <span class="form-request__wrapper">
-            <input type="text" class="form-request__input" name="user-name" />
-            <svg class="form-request__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-person"></use>
+          <label class="form-request__label">
+            <span class="form-request__description">Name</span>
+            <span class="form-request__wrapper">
+              <input type="text" class="form-request__input" name="user-name" />
+              <svg class="form-request__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-request__label">
+            <span class="form-request__description">Telephone</span>
+            <span class="form-request__wrapper">
+              <input type="tel" class="form-request__input" name="user-phone" />
+              <svg class="form-request__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-request__label">
+            <span class="form-request__description">E-mail</span>
+            <span class="form-request__wrapper">
+              <input
+                type="email"
+                class="form-request__input"
+                name="user-email"
+              />
+              <svg class="form-request__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-request__label">
+            <span class="form-request__description">Comments</span>
+            <textarea
+              name="user-comments"
+              class="form-request__comment"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+          <label class="form-request__licence licence">
+            <input
+              type="checkbox"
+              class="licence__checkbox visually-hidden"
+              required
+            />
+            <span class="licence__agreement"
+              >I agree with the letter and accept the
+              <a class="licence__link" href="">Terms and Conditions</a></span
+            >
+            <svg class="licence__icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-checked"></use>
             </svg>
-          </span>
-        </label>
-        <label class="form-request__label">
-          <span class="form-request__description">Telephone</span>
-          <span class="form-request__wrapper">
-            <input type="tel" class="form-request__input" name="user-phone" />
-            <svg class="form-request__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </span>
-        </label>
-        <label class="form-request__label">
-          <span class="form-request__description">E-mail</span>
-          <span class="form-request__wrapper">
-            <input type="email" class="form-request__input" name="user-email" />
-            <svg class="form-request__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </span>
-        </label>
-        <label class="form-request__label">
-          <span class="form-request__description">Comments</span>
-          <textarea
-            name="user-comments"
-            class="form-request__comment"
-            placeholder="Enter the text"
-          ></textarea>
-        </label>
-        <label class="form-request__licence licence">
-          <input
-            type="checkbox"
-            class="licence__checkbox visually-hidden"
-            required
-          />
-          <span class="licence__agreement"
-            >I agree with the letter and accept the
-            <a class="licence__link" href=""
-              >Terms and Conditions</a
-            ></span
-          >
-          <svg class="licence__icon" width="16" height="15">
-            <use href="./images/icons.svg#icon-checked"></use>
-          </svg>
-        </label>
-        <button class="form-request__btn btn" type="submit">Send</button>
+          </label>
+          <button class="form-request__btn btn" type="submit">Send</button>
         </form>
       </div>
     </div>

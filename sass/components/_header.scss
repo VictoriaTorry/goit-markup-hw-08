@@ -20,8 +20,6 @@
   display: none;
 }
 
-
-
 @media screen and (max-width: 767px) {
   .js-menu-container {
     position: absolute;
@@ -51,14 +49,7 @@
     display: none;
   }
 
-body.is-hidden {
-    overflow: hidden;
-  }
-
   .js-menu-container.is-open {
-    // position: fixed;
-    // height: 100vh;
-    // width: 100vw;
     transform: translateX(0);
 
     & .close-btn {

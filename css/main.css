@@ -36,7 +36,6 @@ body {
   margin: 0;
   font-family: var(--main-font-family);
   color: var(--main-color);
-  overflow-x: hidden;
 }
 
 .container {
@@ -193,9 +192,6 @@ body {
   }
   .js-menu-container.is-open .burger-btn {
     display: none;
-  }
-  body.is-hidden {
-    overflow: hidden;
   }
   .js-menu-container.is-open {
     -webkit-transform: translateX(0);
