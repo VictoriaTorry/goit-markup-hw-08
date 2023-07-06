@@ -807,13 +807,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
+  margin-right: -15px;
+  margin-left: -15px;
   margin-top: -30px;
   list-style: none;
 }
 .customers-list__item {
   width: calc((100% - 60px) / 2);
-  margin-right: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
   margin-top: 30px;
 }
 .customers-list__link {
@@ -1067,14 +1069,16 @@ body {
 
 .portfolio-cards {
   list-style: none;
-  margin-right: -30px;
+  margin-right: -15px;
+  margin-left: -15px;
   margin-top: -30px;
 }
 .portfolio-cards__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
   margin-top: 30px;
 }
 
@@ -1210,13 +1214,19 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  width: 95%;
+  max-width: 450px;
   background-color: #ffffff;
   padding: 40px;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 450px) {
+  .modal-request {
+    padding: 40px 20px 20px;
+  }
 }
 .backdrop.is-hidden .modal-request {
   -webkit-transform: translate(-50%, -50%) scale(0.8);
@@ -1254,6 +1264,11 @@ body {
 .form-request__label {
   display: block;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 450px) {
+  .form-request__label {
+    margin-bottom: 3px;
+  }
 }
 .form-request__label:last-child {
   margin-bottom: 20px;
@@ -1316,6 +1331,11 @@ body {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 450px) {
+  .form-request__comment {
+    height: 90px;
+  }
+}
 .form-request__comment::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -1374,7 +1394,7 @@ body {
 .licence__agreement::after {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 5px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   content: "";
@@ -1388,7 +1408,7 @@ body {
 .licence__icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 5px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   opacity: 0;

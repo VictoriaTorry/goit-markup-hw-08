@@ -22,8 +22,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  width: 95%;
+  max-width: 450px;
+  // width: 450px;
   background-color: #ffffff;
+  @media screen and (max-width: 450px) {
+    padding: 40px 20px 20px;
+  }
   padding: 40px;
 
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,6 +64,9 @@
 .form-request {
   &__label {
     display: block;
+    @media screen and (max-width: 450px) {
+      margin-bottom: 3px;
+    }
     margin-bottom: 10px;
     &:last-child {
       margin-bottom: 20px;
@@ -119,6 +127,9 @@
   &__comment {
     display: block;
     width: 100%;
+    @media screen and (max-width: 450px) {
+      height: 90px;
+    }
     height: 120px;
     padding: 12px 16px;
     resize: none;
@@ -165,7 +176,7 @@
     &::after {
       position: absolute;
       top: 50%;
-      left: 10px;
+      left: 5px;
       transform: translateY(-50%);
       content: "";
       width: 16px;
@@ -181,7 +192,7 @@
   &__icon {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 5px;
     transform: translateY(-50%);
     opacity: 0;
     fill: var(--color-on-dark-bg);

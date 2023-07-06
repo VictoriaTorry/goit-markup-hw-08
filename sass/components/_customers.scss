@@ -11,13 +11,15 @@
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-right: -15px;
+  margin-left: -15px;
   margin-top: -30px;
   list-style: none;
 
   &__item {
     width: calc((100% - 60px) / 2);
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
     margin-top: 30px;
   }
 
